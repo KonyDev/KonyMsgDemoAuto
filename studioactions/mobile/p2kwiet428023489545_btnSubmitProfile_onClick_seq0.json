@@ -1,0 +1,19 @@
+{
+    "p2kwiet428023489545_btnSubmitProfile_onClick_seq0": {
+        "id": "p2kwiet428023489545_btnSubmitProfile_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_839354280234898863",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "updatePushSubscription",
+            "display": "updatePushSubscription",
+            "inputparams": [],
+            "source": "module"
+        }]
+    }
+}

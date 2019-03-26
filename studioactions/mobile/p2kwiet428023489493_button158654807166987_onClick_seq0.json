@@ -1,0 +1,19 @@
+{
+    "p2kwiet428023489493_button158654807166987_onClick_seq0": {
+        "id": "p2kwiet428023489493_button158654807166987_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_382174280234896009",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "locate_iBeacons",
+            "display": "locate_iBeacons",
+            "inputparams": [],
+            "source": "module"
+        }]
+    }
+}

@@ -1,0 +1,143 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_placeholder_": "Enter App ID",
+    "_skin_": "sc2a8d3287184b44be80b4313f73228b",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.textbox2.AndroidTextBox2Property",
+        "_padding_": [
+            2,
+            3,
+            0,
+            3
+        ],
+        "autoFilter": false,
+        "containerHeightMode": 1,
+        "padding": [
+            2,
+            3,
+            0,
+            3
+        ],
+        "paddingInPixel": false,
+        "psp": {
+            "keyboardActionLabel": 12
+        },
+        "render": true,
+        "viewType": "default"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheightmode": 1,
+    "containerheightreference": 1,
+    "containerweight": 60,
+    "contentalignment": 4,
+    "focusskin": "sc2a8d3287184b44be80b4313f73228b",
+    "hexpand": true,
+    "id": "txtBoxAppId",
+    "info": null,
+    "iphone": {
+        "@class": "com.kony.gen.viz.model.component.property.textbox2.IPhoneTextBox2Property",
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "autoCorrect": false,
+        "containerHeightMode": 3,
+        "margin": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "marginInPixel": false,
+        "psp": {
+            "closeButtonText": "Done",
+            "keyboardActionLabel": 1,
+            "pasteboardType": 4,
+            "showClearButton": true,
+            "showCloseButton": true,
+            "showProgressIndicator": true
+        },
+        "render": true,
+        "viewType": "default"
+    },
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "p2kwiet428023489559",
+    "margininpixel": false,
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "hbxAppId",
+    "pf": "frmSetting",
+    "placeholderskin": "sc2a8d3287184b44be80b4313f73228b",
+    "securetextentry": false,
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.textbox2.SPATextBox2Property",
+        "autoCorrect": false,
+        "containerHeightMode": 3
+    },
+    "spaan": {
+        "@class": "com.kony.gen.viz.model.component.property.textbox2.SPAAndroidTextBox2Property",
+        "render": true
+    },
+    "spabb": {
+        "@class": "com.kony.gen.viz.model.component.property.textbox2.SPABBTextBox2Property",
+        "render": true
+    },
+    "spaip": {
+        "@class": "com.kony.gen.viz.model.component.property.textbox2.SPAIPhoneTextBox2Property",
+        "render": true
+    },
+    "spawinphone8": {
+        "@class": "com.kony.gen.viz.model.component.property.textbox2.SPAWinPhone8TextBox2Property",
+        "render": true
+    },
+    "textinputmode": "A",
+    "vexpand": false,
+    "viewtype": "default",
+    "wType": "TextField",
+    "widgetalignment": 5,
+    "winphone8": {
+        "@class": "com.kony.gen.viz.model.component.property.textbox2.WinPhone8TextBox2Property",
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "autoFilter": false,
+        "containerHeightMode": 1,
+        "margin": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "marginInPixel": false,
+        "psp": {
+            "enableCache": false
+        },
+        "render": true
+    }
+}

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pxsObject>
+    <appSmsCode></appSmsCode>
+    <plainxmlservice>
+        <authenticationMode>basic</authenticationMode>
+        <cacheduration></cacheduration>
+        <cacheable>false</cacheable>
+        <includecookies></includecookies>
+        <dataprovider></dataprovider>
+        <dcResponse/>
+        <encryptPwd>true</encryptPwd>
+        <escapeXML>false</escapeXML>
+        <group>other</group>
+        <headerparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>AccessToken</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>103e28fd07da33a4ae3e2029eacf0d8f2733e722</testvalue>
+            <value></value>
+        </headerparam>
+        <headerparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>AccessSecret</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>1db816f00982124a3e4d069ddf5eada8cd624f52</testvalue>
+            <value></value>
+        </headerparam>
+        <headerparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>Content-Type</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>application/json</testvalue>
+            <value></value>
+        </headerparam>
+        <httpmethod></httpmethod>
+        <id>ExceptPush</id>
+        <identityProvider></identityProvider>
+        <identityProviderName></identityProviderName>
+        <ignoreProxy>false</ignoreProxy>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>kmsurl</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>mobilefabric-demo.messaging.konycloud.com</testvalue>
+            <value></value>
+        </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>lname</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>narayana</testvalue>
+            <value></value>
+        </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>fname</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>vadithya</testvalue>
+            <value></value>
+        </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>audienceID</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>454</testvalue>
+            <value></value>
+        </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>eventID</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>12</testvalue>
+            <value></value>
+        </inparam>
+        <intemplate>{
+ "event": {
+  "eventNamePairs": {
+   "key": [
+    {
+     "content": "$lname",
+     "name": "lastname"
+    },
+    {
+     "content": "$fname",
+     "name": "firstname"
+    }
+   ]
+  },
+  "email": {
+   "content": {
+    "priorityService": "false"
+   },
+   "recipients": {
+    "recipient": [
+     {
+      "id": "$audienceID"
+     }
+    ]
+   },
+   "from": {
+   }
+  },
+  "sms": {
+   "content": {
+    "priorityService": "false",
+    "mimeType": "text/plain"
+   },
+   "recipients": {
+    "recipient": [
+     {
+      "id": "$audienceID"
+     }
+    ]
+   }
+  },
+  "eventid": "$eventID",
+  "pass": {
+   "recipients": {
+    "recipient": [
+     {
+      "id": "$audienceID"
+     }
+    ]
+   },
+   "passTemplateValues": {
+    "key": [
+     {
+      "name": "Seat",
+      "data": "1A",
+      "label": "Seat"
+     },
+     {
+      "name": "Flight",
+      "data": "BA0175",
+      "label": "Flight"
+     },
+     {
+      "name": "Departure City",
+      "data": "LHR",
+      "label": "London"
+     },
+     {
+      "name": "Arrival City",
+      "data": "JFK",
+      "label": "New York"
+     },
+     {
+      "name": "Passenger Name",
+      "data": "Matthew Terry",
+      "label": "Name"
+     },
+     {
+      "name": "Passenger Status",
+      "data": "Platinum",
+      "label": "Status"
+     },
+     {
+      "name": "Departure",
+      "data": "16 Dec - 10:00",
+      "label": "Departs"
+     },
+     {
+      "name": "Class",
+      "data": "Club World",
+      "label": "Class"
+     },
+     {
+      "name": "BA Address",
+      "data": "Waterside,\r\nSpeedbird Way, \r\noff Bath Road,\r\nHarmondsworth, UB7 0GA",
+      "label": "Head Office"
+     },
+     {
+      "name": "BA  Customer Care",
+      "data": "care@ba.com\r\n1800123456789",
+      "label": "Cust Care"
+     },
+     {
+      "name": "BA Copyright",
+      "data": "BA is the trademark of British Airways.",
+      "label": "Copyright"
+     }
+    ]
+   }
+  }
+ }
+}</intemplate>
+        <ntlmDomain></ntlmDomain>
+        <ntlmHost></ntlmHost>
+        <outtemplate>{"event": {
+   "emailResponse": {
+      "code": 200,
+      "description": "Request Queued. ",
+      "requestId": "2375389121819641308"
+   },
+   "passResponse": {
+      "code": 200,
+      "description": "Request Queued. ",
+      "requestId": "6566198305985608696"
+   },
+   "smsResponse": {
+      "code": 200,
+      "description": "Request Queued. ",
+      "requestId": "8094608336867735381"
+   }
+}}</outtemplate>
+        <outTemplateHeader>Date: Mon, 20 Apr 2015 13:46:38 GMT
+Content-Length: 296
+Connection: keep-alive
+Content-Type: text/html;charset=UTF-8
+Server: Kony
+</outTemplateHeader>
+        <password></password>
+        <postclassname></postclassname>
+        <preclassname></preclassname>
+        <proxyname></proxyname>
+        <proxyport></proxyport>
+        <proxypwd></proxypwd>
+        <proxyuserid></proxyuserid>
+        <responseencoding>UTF-8</responseencoding>
+        <smscode></smscode>
+        <smsenabled>false</smsenabled>
+        <timeout></timeout>
+        <url>https://$kmsurl/service/eventpushmessage</url>
+        <urlprovider></urlprovider>
+        <userid></userid>
+    </plainxmlservice>
+</pxsObject>

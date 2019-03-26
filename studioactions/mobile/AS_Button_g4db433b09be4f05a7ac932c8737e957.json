@@ -1,0 +1,24 @@
+{
+    "AS_Button_g4db433b09be4f05a7ac932c8737e957": {
+        "id": "AS_Button_g4db433b09be4f05a7ac932c8737e957",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmFilters",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b8bcccdeffa7476099b6608da0b9e5c4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__g0fa937770c04502b913b7316bfabf59",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var tags=frmFilters.txtTags.text;\nregisterGeoBoundary(frmFilters.listDistance.selectedKey, tags);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

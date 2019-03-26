@@ -1,0 +1,22 @@
+{
+    "p2kwiet428023489493_vbox15865480716587_onClick_seq0": {
+        "id": "p2kwiet428023489493_vbox15865480716587_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___fa350f3f60a34f3580ae240e063c822b",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getGeoLocations",
+            "display": "getGeoLocations",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

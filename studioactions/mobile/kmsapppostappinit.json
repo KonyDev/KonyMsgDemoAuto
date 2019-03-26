@@ -1,0 +1,18 @@
+{
+    "kmsapppostappinit": {
+        "id": "kmsapppostappinit",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "params",
+            "value": "params"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_postappinit_807614280234893563",
+            "type": "INVOKE_FUNCTION",
+            "display": "postAppinit",
+            "inputparams": [],
+            "source": "module"
+        }]
+    }
+}

@@ -1,0 +1,63 @@
+{
+  "android": {
+    "applicableblockedUIWidget": "Button",
+    "background_color": "ffffffff",
+    "background_style": "vg",
+    "bg_type": "one",
+    "border_color": "ffffffff",
+    "border_radius": 0,
+    "border_style": "plain",
+    "border_type": 0,
+    "border_width": 0,
+    "font_color": "5d5d5dff",
+    "font_name": "Roboto-Light",
+    "font_size": 130,
+    "font_weight": "normal",
+    "isForked": true,
+    "text_shadow": {
+      "br": 0,
+      "color": "000000",
+      "x": 0,
+      "y": 0
+    },
+    "wType": "TextField"
+  },
+  "applicableblockedUIWidget": "Button",
+  "background_color": "ffffff00",
+  "background_style": "vg",
+  "bg_type": "one",
+  "border_color": "000000ff",
+  "border_radius": 0,
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "font_color": "000000ff",
+  "font_size": 100,
+  "font_weight": "normal",
+  "iphone": {
+    "applicableblockedUIWidget": "Button",
+    "background_color": "ffffffff",
+    "background_style": "vg",
+    "bg_type": "one",
+    "border_color": "ffffffff",
+    "border_radius": 0,
+    "border_style": "plain",
+    "border_type": 0,
+    "border_width": 1,
+    "font_color": "5d5d5dff",
+    "font_name": "HelveticaNeue-Light",
+    "font_size": 120,
+    "isForked": true,
+    "wType": "TextField"
+  },
+  "isDefaultSkin": false,
+  "isForked": false,
+  "kuid": "s3759782d5954271bc039aa11b46b7b6",
+  "text_shadow": {
+    "br": 0,
+    "color": "000000",
+    "x": 0,
+    "y": 0
+  },
+  "wType": "TextField"
+}

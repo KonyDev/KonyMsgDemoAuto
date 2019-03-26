@@ -1,0 +1,69 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s16f44bd9af445cfbdb6c36c1bb44742",
+    "_top_": {
+        "type": "string",
+        "value": "8%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblLocation",
+        "lblLocationText",
+        "txtLocation",
+        "lblLatitude",
+        "lblLatitudeText",
+        "lblLongitude",
+        "lblLongitudeText",
+        "lblDistance",
+        "listDistance",
+        "lblTags",
+        "txtTags",
+        "btnSearch",
+        "segSuggest"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxFilterMain",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ca32afb78e57462484e6c5b73b02c13c",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmFilters",
+    "pf": "frmFilters",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

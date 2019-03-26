@@ -1,0 +1,19 @@
+{
+    "p2kwiet428023489565_btnSubmitProfile_onClick_seq0": {
+        "id": "p2kwiet428023489565_btnSubmitProfile_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_2853042802348963",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "resetback",
+            "display": "resetback",
+            "inputparams": [],
+            "source": "module"
+        }]
+    }
+}

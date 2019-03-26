@@ -1,0 +1,65 @@
+{
+    "splashScreen": {
+        "mobile": {
+            "iphone": {
+                "splashImage": null,
+                "showLoadingIndicator": true,
+                "videoInterruptible": false,
+                "animationDuration": 10
+            },
+            "android": {
+                "splashImage": null,
+                "showLoadingIndicator": true,
+                "videoInterruptible": false,
+                "animationDuration": 10,
+                "backgroundColor": "293e4a"
+            },
+            "winphone8": {
+                "showLoadingIndicator": true
+            },
+            "spa": {
+                "backgroundColor": "293e4a"
+            },
+            "spaip": {},
+            "spaan": {},
+            "spawinphone8": {},
+            "splashImage": "splash.png",
+            "winphone10": {}
+        },
+        "tablet": {
+            "ipad": {
+                "landscape": {
+                    "videoInterruptible": false,
+                    "animationDuration": 10
+                },
+                "showLoadingIndicator": true,
+                "videoInterruptible": false,
+                "animationDuration": 10
+            },
+            "android": {
+                "showLoadingIndicator": true,
+                "videoInterruptible": false,
+                "animationDuration": 10,
+                "backgroundColor": "293e4a"
+            },
+            "windows8": {
+                "showLoadingIndicator": true,
+                "foregroundColor": "ffffff",
+                "backgroundColor": "293e4a"
+            },
+            "spa": {
+                "backgroundColor": "293e4a"
+            },
+            "spaipad": {},
+            "spaandroidtablet": {},
+            "spawindowstablet": {},
+            "splashImage": "bg.png"
+        },
+        "desktop": {
+            "desktopweb": {
+                "backgroundColor": "293e4a"
+            },
+            "splashImage": "bg.png"
+        }
+    }
+}

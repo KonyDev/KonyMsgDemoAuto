@@ -1,0 +1,83 @@
+<application desc="" id="kmsapp" name="" smscode="">
+   <app-config>
+      <config-param name="APP_SMS_HEADER" value="null"/>
+   </app-config>
+   <services>
+      <service cachable="false" cacheduration="" id="subkms" passwordencrypted="true" smscode="" smsenabled="false" type="plainxmlserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl/subscription"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="true"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;subscriptionService&gt;&lt;subscribe&gt;&lt;appId&gt;$appId&lt;/appId&gt;&lt;deviceId&gt;$deviceId&lt;/deviceId&gt;&lt;ufid&gt;$ufid&lt;/ufid&gt;&lt;sid&gt;$sid&lt;/sid&gt;&lt;osType&gt;$osType&lt;/osType&gt;&lt;/subscribe&gt;&lt;/subscriptionService&gt;"/>
+            <param datatype="string" encode="true" name="appId" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="deviceId" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="ufid" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="sid" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="osType" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="subscriptionResponse" src="//subscriptionResponse">
+               <param datatype="string" format="None" formatvalue="" name="statusCode" sms-name="" src="//statusCode" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="message" sms-name="" src="//message" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ksid" sms-name="" src="//ksid" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="unsubkms" passwordencrypted="true" smscode="" smsenabled="false" type="plainxmlserviceConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl/subscription"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <template-param name="message" value="&lt;subscriptionService&gt;&lt;unsubscribe&gt;&lt;ksid&gt;$ksId&lt;/ksid&gt;&lt;appId&gt;$appId&lt;/appId&gt;&lt;deviceId&gt;$deviceId&lt;/deviceId&gt;&lt;/unsubscribe&gt;&lt;/subscriptionService&gt;"/>
+            <param datatype="string" encode="true" name="ksId" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="true" name="appId" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="true" name="deviceId" sms-name="" src="request" value=""/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <dataset id="subscriptionResponse" src="//subscriptionResponse">
+               <param datatype="string" format="None" formatvalue="" name="statusCode" sms-name="" src="//statusCode" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="message" sms-name="" src="//message" target="response"/>
+               <param datatype="string" format="None" formatvalue="" name="ksid" sms-name="" src="//ksid" target="response"/>
+            </dataset>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+   </services>
+</application>

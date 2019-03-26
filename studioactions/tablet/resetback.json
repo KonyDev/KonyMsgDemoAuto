@@ -1,0 +1,21 @@
+{
+    "resetback": {
+        "id": "p2kwiet428023489568_resetback_titlebarAction",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION_resetback",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "resetback",
+            "display": "resetback",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "source": "module"
+        }]
+    }
+}

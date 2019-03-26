@@ -1,0 +1,19 @@
+{
+    "p2kwiet428023489565_frmSetting_preshow_seq0": {
+        "id": "p2kwiet428023489565_frmSetting_preshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_preshow_71727428023489255",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmSetting.txtBoxurl.text=KMSPROP.kmsServerUrl;\n frmSetting.txtBoxAppId.text=KMSPROP.appId;\n frmSetting.txtBoxSenderID.text=KMSPROP.senderID; "
+        }]
+    }
+}

@@ -1,0 +1,9 @@
+
+{
+    "NSAppTransportSecurity" :
+    {
+        "NSAllowsArbitraryLoads" : true 
+    },//Add this if you want have HTTP network calls
+    "NSLocationAlwaysUsageDescription": "geoBoundaries"
+}
+

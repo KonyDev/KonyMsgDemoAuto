@@ -1,0 +1,19 @@
+{
+    "p2kwiet428023489603_btnProceed_onClick_seq0": {
+        "id": "p2kwiet428023489603_btnProceed_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_94414280234898518",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "positiveSelection",
+            "display": "positiveSelection",
+            "inputparams": [],
+            "source": "module"
+        }]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "AS_Label_f957d34a0f1c4ae9be17e6d8e1bf606c": {
+        "id": "AS_Label_f957d34a0f1c4ae9be17e6d8e1bf606c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmGeoLocations",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j9541048233045268565456bb2a57924"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___a4693609cc034f8992f4d5cce6a17657",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmFilters",
+            "formKUID": "b8bcccdeffa7476099b6608da0b9e5c4",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": ""
+        }]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "p2kwiet428023489545_listbox5316540885527_onSelection_seq0": {
+        "id": "p2kwiet428023489545_listbox5316540885527_onSelection_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onSelection_611514280234898694",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "selectedCountry=frmProfile.listbox5316540885527.selectedKeyValue[1];\n if(selectedCountry==\"United States\"){\n frmProfile.lstboxStates.placeholder=\"Select State\";\n frmProfile.lstboxStates.setVisibility(true);\n frmProfile.lineState.setVisibility(true);\n }else{ \n frmProfile.lstboxStates.setVisibility(false);\n frmProfile.lineState.setVisibility(false);\n selectedState=\"\";\n }"
+        }]
+    }
+}

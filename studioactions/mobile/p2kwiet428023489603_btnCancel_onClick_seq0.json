@@ -1,0 +1,19 @@
+{
+    "p2kwiet428023489603_btnCancel_onClick_seq0": {
+        "id": "p2kwiet428023489603_btnCancel_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_387684280234895527",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "negativeSelection",
+            "display": "negativeSelection",
+            "inputparams": [],
+            "source": "module"
+        }]
+    }
+}

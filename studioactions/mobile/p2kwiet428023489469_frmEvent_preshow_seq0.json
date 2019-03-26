@@ -1,0 +1,19 @@
+{
+    "p2kwiet428023489469_frmEvent_preshow_seq0": {
+        "id": "p2kwiet428023489469_frmEvent_preshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_preshow_238884280234893571",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmEvent.lblInfo2.setVisibility(false);"
+        }]
+    }
+}

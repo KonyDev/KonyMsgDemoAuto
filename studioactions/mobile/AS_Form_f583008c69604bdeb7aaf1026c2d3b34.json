@@ -1,0 +1,24 @@
+{
+    "AS_Form_f583008c69604bdeb7aaf1026c2d3b34": {
+        "id": "AS_Form_f583008c69604bdeb7aaf1026c2d3b34",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmFilters",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b8bcccdeffa7476099b6608da0b9e5c4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__cff62cefb9ab4cfc854aceaba76adde5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmFilters.lblLocationText.text=frmGeoLocations.lblSearchLocation.text;\nfrmFilters.lblLatitudeText.text=lat;\nfrmFilters.lblLongitudeText.text=lon;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

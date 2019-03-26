@@ -1,0 +1,30 @@
+{
+    "AS_Segment_f83ad92a00ef4fb4a2b3ce6792524f10": {
+        "id": "AS_Segment_f83ad92a00ef4fb4a2b3ce6792524f10",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmGeoLocations",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j9541048233045268565456bb2a57924"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__h82809d90594446ead2649070d69e877",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "onSegRowClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

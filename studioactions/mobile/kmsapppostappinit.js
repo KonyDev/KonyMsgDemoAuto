@@ -1,0 +1,3 @@
+function kmsapppostappinit(params) {
+    return
+}

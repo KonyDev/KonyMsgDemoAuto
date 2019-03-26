@@ -1,0 +1,24 @@
+{
+    "AS_Form_b0ee0c21c69a496b845df4961ce931e9": {
+        "id": "AS_Form_b0ee0c21c69a496b845df4961ce931e9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmGeoLocations",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j9541048233045268565456bb2a57924"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b258d28dd3924f70b5a0a06562c4023f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "startGeoBOunds();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

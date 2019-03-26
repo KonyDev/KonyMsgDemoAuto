@@ -1,0 +1,29 @@
+{
+    "kmsapppreappinit": {
+        "id": "kmsapppreappinit",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "params",
+            "value": "params"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___gb97091a2e8a486ca9d75b84ebcafeea",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "manaulInit",
+            "display": "manaulInit",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }, {
+            "id": "customcode_preappinit_16854280234898895",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setApplicationCallBacks",
+            "display": "setApplicationCallBacks",
+            "inputparams": [],
+            "source": "module"
+        }]
+    }
+}

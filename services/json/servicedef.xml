@@ -1,0 +1,399 @@
+<application desc="" id="kmsapp" name="" smscode="">
+   <app-config>
+      <config-param name="APP_SMS_HEADER" value="null"/>
+   </app-config>
+   <services>
+      <service cachable="false" cacheduration="" id="BeaconUpdate" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl/api/v1/beaconupdate"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="includecookies" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Content-Type" sms-name="" src="" target="" value=""/>
+            </header>
+            <template-param name="message" value="{    &quot;beacons&quot;: {&quot;beacon&quot;: {       &quot;major&quot;: &quot;$major&quot;,       &quot;minor&quot;: &quot;$minor&quot;,       &quot;uuid&quot;: &quot;$uuid&quot;    }},    &quot;ksid&quot;: &quot;$ksid&quot; }"/>
+            <param datatype="string" encode="true" name="ksid" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="uuid" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="major" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="minor" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="id" sms-name="" src="/id" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="message" sms-name="" src="/message" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="CreateAudience" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl/api/v1/audience"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="includecookies" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="true"/>
+            <config-param name="ignorehttpproxy" value="true"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Content-Type" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessSecret" sms-name="" src="" target="" value=""/>
+            </header>
+            <template-param name="message" value="{    &quot;active&quot;:$active ,    &quot;email&quot;:$email ,    &quot;emailSubscription&quot;:$emailSubscription ,    &quot;firstName&quot;: $firstName,    &quot;lastName&quot;:$lastName ,    &quot;mobileNumber&quot;:$mobileNumber ,    &quot;pushSubscription&quot;:$pushSubscription ,    &quot;smsSubscription&quot;: $smsSubscription }"/>
+            <param datatype="string" encode="true" name="active" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="email" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="emailSubscription" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="firstName" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="lastName" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="mobileNumber" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="pushSubscription" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="smsSubscription" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="request" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="id" sms-name="" src="/id" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="message" sms-name="" src="/message" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="deleteAudience" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl/api/v1/audience/$audienceID/delete"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="includecookies" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Content-Type" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessSecret" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value=""/>
+            </header>
+            <template-param name="message" value="[&quot;audienceID&quot;:&quot;$audienceID&quot;]"/>
+            <param datatype="string" encode="true" name="audienceID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="id" sms-name="" src="/id" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="message" sms-name="" src="/message" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="EditAudience" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl/api/v1/audience/$audienceID/modify"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="includecookies" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Content-Type" sms-name="" src="" target="" value="application/json"/>
+               <param datatype="string" format="None" formatvalue="" name="AccessSecret" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value=""/>
+            </header>
+            <template-param name="message" value="{    &quot;active&quot;: $active,   &quot;email&quot;:$email,    &quot;emailSubscription&quot;: $emailSubscription,    &quot;firstName&quot;: $firstName,    &quot;lastName&quot;: $lastName,    &quot;mobileNumber&quot;: $mobileNumber,    &quot;pushSubscription&quot;: $pushSubscription,    &quot;smsSubscription&quot;: $smsSubscription }"/>
+            <param datatype="string" encode="true" name="active" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="email" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="emailSubscription" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="firstName" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="lastName" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="mobileNumber" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="pushSubscription" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="smsSubscription" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="audienceID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="id" sms-name="" src="/id" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="message" sms-name="" src="/message" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="ExceptPush" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl/service/eventpushmessage"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="includecookies" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessSecret" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Content-Type" sms-name="" src="" target="" value=""/>
+            </header>
+            <template-param name="message" value="{  &quot;event&quot;: {   &quot;eventNamePairs&quot;: {    &quot;key&quot;: [     {      &quot;content&quot;: &quot;$lname&quot;,      &quot;name&quot;: &quot;lastname&quot;     },     {      &quot;content&quot;: &quot;$fname&quot;,      &quot;name&quot;: &quot;firstname&quot;     }    ]   },   &quot;email&quot;: {    &quot;content&quot;: {     &quot;priorityService&quot;: &quot;false&quot;    },    &quot;recipients&quot;: {     &quot;recipient&quot;: [      {       &quot;id&quot;: &quot;$audienceID&quot;      }     ]    },    &quot;from&quot;: {    }   },   &quot;sms&quot;: {    &quot;content&quot;: {     &quot;priorityService&quot;: &quot;false&quot;,     &quot;mimeType&quot;: &quot;text/plain&quot;    },    &quot;recipients&quot;: {     &quot;recipient&quot;: [      {       &quot;id&quot;: &quot;$audienceID&quot;      }     ]    }   },   &quot;eventid&quot;: &quot;$eventID&quot;,   &quot;pass&quot;: {    &quot;recipients&quot;: {     &quot;recipient&quot;: [      {       &quot;id&quot;: &quot;$audienceID&quot;      }     ]    },    &quot;passTemplateValues&quot;: {     &quot;key&quot;: [      {       &quot;name&quot;: &quot;Seat&quot;,       &quot;data&quot;: &quot;1A&quot;,       &quot;label&quot;: &quot;Seat&quot;      },      {       &quot;name&quot;: &quot;Flight&quot;,       &quot;data&quot;: &quot;BA0175&quot;,       &quot;label&quot;: &quot;Flight&quot;      },      {       &quot;name&quot;: &quot;Departure City&quot;,       &quot;data&quot;: &quot;LHR&quot;,       &quot;label&quot;: &quot;London&quot;      },      {       &quot;name&quot;: &quot;Arrival City&quot;,       &quot;data&quot;: &quot;JFK&quot;,       &quot;label&quot;: &quot;New York&quot;      },      {       &quot;name&quot;: &quot;Passenger Name&quot;,       &quot;data&quot;: &quot;Matthew Terry&quot;,       &quot;label&quot;: &quot;Name&quot;      },      {       &quot;name&quot;: &quot;Passenger Status&quot;,       &quot;data&quot;: &quot;Platinum&quot;,       &quot;label&quot;: &quot;Status&quot;      },      {       &quot;name&quot;: &quot;Departure&quot;,       &quot;data&quot;: &quot;16 Dec - 10:00&quot;,       &quot;label&quot;: &quot;Departs&quot;      },      {       &quot;name&quot;: &quot;Class&quot;,       &quot;data&quot;: &quot;Club World&quot;,       &quot;label&quot;: &quot;Class&quot;      },      {       &quot;name&quot;: &quot;BA Address&quot;,       &quot;data&quot;: &quot;Waterside,\r\nSpeedbird Way, \r\noff Bath Road,\r\nHarmondsworth, UB7 0GA&quot;,       &quot;label&quot;: &quot;Head Office&quot;      },      {       &quot;name&quot;: &quot;BA  Customer Care&quot;,       &quot;data&quot;: &quot;care@ba.com\r\n1800123456789&quot;,       &quot;label&quot;: &quot;Cust Care&quot;      },      {       &quot;name&quot;: &quot;BA Copyright&quot;,       &quot;data&quot;: &quot;BA is the trademark of British Airways.&quot;,       &quot;label&quot;: &quot;Copyright&quot;      }     ]    }   }  } }"/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="lname" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="fname" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="audienceID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="eventID" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="geoUpdate" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl/service/geolocupdate"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="includecookies" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="true"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Content-Type" sms-name="" src="" target="" value="application/json"/>
+            </header>
+            <template-param name="message" value="{    &quot;ksid&quot;: &quot;$ksid&quot;,    &quot;latitude&quot;: &quot;$lat&quot;,    &quot;locname&quot;: &quot;$locname&quot;,    &quot;longitude&quot;: &quot;$lon&quot;, }"/>
+            <param datatype="string" encode="true" name="ksid" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="lat" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="locname" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="lon" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="description" sms-name="" src="/description" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="statusCode" sms-name="" src="/statusCode" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="getAud" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="http://kms-demo.messaging.qa-konycloud.com/api/v1/subscribeaudience/4552892954829457246"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="includecookies" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="GET"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input/>
+         <service-output>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="pushEmailSmsTriggerEvent" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl/api/v1/events/push"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="includecookies" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Content-Type" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessSecret" sms-name="" src="" target="" value=""/>
+            </header>
+            <template-param name="message" value="{  &quot;event&quot;: {       &quot;email&quot;: {            &quot;content&quot;: {&quot;priorityService&quot;: &quot;false&quot;},            &quot;from&quot;: {},            &quot;recipients&quot;: {&quot;recipient&quot;: [{&quot;id&quot;: &quot;$audienceID&quot;}]}        },       &quot;eventNamePairs&quot;: {&quot;key&quot;: [            {               &quot;content&quot;: &quot;$lname&quot;,               &quot;name&quot;: &quot;lastname&quot;            },            {               &quot;content&quot;: &quot;$fname&quot;,               &quot;name&quot;: &quot;firstname&quot;            }        ]},        &quot;eventid&quot;: &quot;$eventID&quot;,        &quot;message&quot;: {            &quot;content&quot;: {                &quot;mimeType&quot;: &quot;text/plain&quot;,                &quot;priorityService&quot;: &quot;false&quot;             },            &quot;subscribers&quot;: {         &quot;subscriber&quot;: [{&quot;ksid&quot;: &quot;$ksid&quot;}]}           },          &quot;sms&quot;: {             &quot;content&quot;: {                 &quot;mimeType&quot;: &quot;text/plain&quot;,                 &quot;priorityService&quot;: &quot;false&quot;              },             &quot;recipients&quot;: {&quot;recipient&quot;: [{&quot;id&quot;: &quot;$audienceID&quot;}]}            },       &quot;pass&quot;: {                 &quot;recipients&quot;: {                     &quot;recipient&quot;: [ {                             &quot;id&quot;: &quot;$audienceID&quot;                        }]                 },                 &quot;passTemplateValues&quot;: {                    &quot;key&quot;: [                     {                         &quot;name&quot;: &quot;Seat&quot;,                         &quot;data&quot;: &quot;1A&quot;,                         &quot;label&quot;: &quot;Seat&quot;                     },                     {                         &quot;name&quot;: &quot;Flight&quot;,                         &quot;data&quot;: &quot;BA0175&quot;,                         &quot;label&quot;: &quot;Flight&quot;                     },                     {                         &quot;name&quot;: &quot;Departure City&quot;,                         &quot;data&quot;: &quot;HYD&quot;,                         &quot;label&quot;: &quot;HYDERABAD&quot;                     },                     {                         &quot;name&quot;: &quot;Arrival City&quot;,                         &quot;data&quot;: &quot;JFK&quot;,                         &quot;label&quot;: &quot;New York&quot;                     },                     {                         &quot;name&quot;: &quot;Passenger Name&quot;,                         &quot;data&quot;: &quot;Matthew Terry&quot;,                         &quot;label&quot;: &quot;Name&quot;                     },                     {                         &quot;name&quot;: &quot;Passenger Status&quot;,                         &quot;data&quot;: &quot;Platinum&quot;,                         &quot;label&quot;: &quot;Status&quot;                     },                     {                         &quot;name&quot;: &quot;Departure&quot;,                         &quot;data&quot;: &quot;16 Dec - 10:00&quot;,                         &quot;label&quot;: &quot;Departs&quot;                     },                     {                         &quot;name&quot;: &quot;Class&quot;,                         &quot;data&quot;: &quot;Club World&quot;,                         &quot;label&quot;: &quot;Class&quot;                     },                     {                         &quot;name&quot;: &quot;BA Address&quot;,                         &quot;data&quot;: &quot;Waterside,\r\nSpeedbird Way, \r\noff Bath Road,\r\nHarmondsworth, UB7 0GA&quot;,                         &quot;label&quot;: &quot;Head Office&quot;                     },                     {                         &quot;name&quot;: &quot;BA  Customer Care&quot;,                         &quot;data&quot;: &quot;care@ba.com\r\n1800123456789&quot;,                         &quot;label&quot;: &quot;Cust Care&quot;                     },                     {                         &quot;name&quot;: &quot;BA Copyright&quot;,                         &quot;data&quot;: &quot;BA is the trademark of British Airways.&quot;,                         &quot;label&quot;: &quot;Copyright&quot;                     }                 ]             }         } }}"/>
+            <param datatype="string" encode="true" name="audienceID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="lname" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="fname" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="eventID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="ksid" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="triggerEvent" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl/api/v1/events/push"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="includecookies" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value="POST"/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="Content-Type" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessSecret" sms-name="" src="" target="" value=""/>
+            </header>
+            <template-param name="message" value="{&quot;event&quot;: {    &quot;eventNamePairs&quot;: {&quot;key&quot;: [       {          &quot;content&quot;: &quot;Mayank&quot;,          &quot;name&quot;: &quot;FIRSTNAME&quot;       },       {          &quot;content&quot;: &quot;1024&quot;,          &quot;name&quot;: &quot;CLAIMNUMBER&quot;       },       {          &quot;content&quot;: &quot;Success&quot;,          &quot;name&quot;: &quot;CLAIMSTATUS&quot;       }    ]},    &quot;eventid&quot;: &quot;$eventid&quot;,    &quot;message&quot;: {       &quot;content&quot;: {          &quot;mimeType&quot;: &quot;text/plain&quot;,          &quot;priorityService&quot;: &quot;false&quot;       },       &quot;subscribers&quot;: {&quot;subscriber&quot;: [{&quot;ksid&quot;: &quot;$ksid&quot;}]}    } }}"/>
+            <param datatype="string" encode="true" name="eventid" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="ksid" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="string" format="None" formatvalue="" name="message" sms-name="" src="//message" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="id" sms-name="" src="//id" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+      <service cachable="false" cacheduration="" id="WithPush" passwordencrypted="true" smscode="" smsenabled="false" type="jsonConnector">
+         <service-config>
+            <config-param name="endpointUrl" value="https://$kmsurl:443/api/v1/events/push"/>
+            <config-param name="postprocessorname" value=""/>
+            <config-param name="preprocessorname" value=""/>
+            <config-param name="urlprovider" value=""/>
+            <config-param name="dataprovider" value=""/>
+            <config-param name="sockettimeout" value=""/>
+            <config-param name="includecookies" value=""/>
+            <config-param name="proxyname" value=""/>
+            <config-param name="proxyport" value=""/>
+            <config-param name="proxyusername" value=""/>
+            <config-param name="http.method" value=""/>
+            <config-param name="isembedxmlpresent" value="false"/>
+            <config-param name="ignorehttpproxy" value="false"/>
+            <config-param name="responseEncoding" value="UTF-8"/>
+            <config-param name="server.auth.mode" value="basic"/>
+            <config-param name="server.auth.host" value=""/>
+            <config-param name="server.auth.ntlm.domain" value=""/>
+         </service-config>
+         <service-input>
+            <header>
+               <param datatype="string" format="None" formatvalue="" name="AccessToken" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="AccessSecret" sms-name="" src="" target="" value=""/>
+               <param datatype="string" format="None" formatvalue="" name="Content-Type" sms-name="" src="" target="" value=""/>
+            </header>
+            <template-param name="message" value="{&quot;event&quot;: {    &quot;email&quot;: {       &quot;content&quot;: {&quot;priorityService&quot;: &quot;false&quot;},       &quot;from&quot;: {},       &quot;recipients&quot;: {&quot;recipient&quot;: [{&quot;id&quot;: &quot;$audienceID&quot;}]}    },    &quot;eventNamePairs&quot;: {&quot;key&quot;: [       {          &quot;content&quot;: &quot;$lname&quot;,          &quot;name&quot;: &quot;lastname&quot;       },       {          &quot;content&quot;: &quot;$fname&quot;,          &quot;name&quot;: &quot;firstname&quot;       }    ]},    &quot;eventid&quot;: &quot;$eventID&quot;,    &quot;message&quot;: {       &quot;content&quot;: {          &quot;mimeType&quot;: &quot;text/plain&quot;,          &quot;priorityService&quot;: &quot;false&quot;       },       &quot;subscribers&quot;: {&quot;subscriber&quot;: [{&quot;ksid&quot;: &quot;$ksid&quot;}]}    },    &quot;pass&quot;: {       &quot;passTemplateValues&quot;: {&quot;key&quot;: [          {             &quot;data&quot;: &quot;1A&quot;,             &quot;label&quot;: &quot;Seat&quot;,             &quot;name&quot;: &quot;Seat&quot;          },          {             &quot;data&quot;: &quot;BA0175&quot;,             &quot;label&quot;: &quot;Flight&quot;,             &quot;name&quot;: &quot;Flight&quot;          },          {             &quot;data&quot;: &quot;LHR&quot;,             &quot;label&quot;: &quot;London&quot;,             &quot;name&quot;: &quot;Departure City&quot;          },          {             &quot;data&quot;: &quot;JFK&quot;,             &quot;label&quot;: &quot;New York&quot;,             &quot;name&quot;: &quot;Arrival City&quot;          },          {             &quot;data&quot;: &quot;Matthew Terry&quot;,             &quot;label&quot;: &quot;Name&quot;,             &quot;name&quot;: &quot;Passenger Name&quot;          },          {             &quot;data&quot;: &quot;Platinum&quot;,             &quot;label&quot;: &quot;Status&quot;,             &quot;name&quot;: &quot;Passenger Status&quot;          },          {             &quot;data&quot;: &quot;16 Dec - 10:00&quot;,             &quot;label&quot;: &quot;Departs&quot;,             &quot;name&quot;: &quot;Departure&quot;          },          {             &quot;data&quot;: &quot;Club World&quot;,             &quot;label&quot;: &quot;Class&quot;,             &quot;name&quot;: &quot;Class&quot;          },          {             &quot;data&quot;: &quot;Waterside,\r\nSpeedbird Way, \r\noff Bath Road,\r\nHarmondsworth, UB7 0GA&quot;,             &quot;label&quot;: &quot;Head Office&quot;,             &quot;name&quot;: &quot;BA Address&quot;          },          {             &quot;data&quot;: &quot;care@ba.com\r\n1800123456789&quot;,             &quot;label&quot;: &quot;Cust Care&quot;,             &quot;name&quot;: &quot;BA  Customer Care&quot;          },          {             &quot;data&quot;: &quot;BA is the trademark of British Airways.&quot;,             &quot;label&quot;: &quot;Copyright&quot;,             &quot;name&quot;: &quot;BA Copyright&quot;          }       ]},       &quot;recipients&quot;: {&quot;recipient&quot;: [{&quot;id&quot;: &quot;$audienceID&quot;}]}    },    &quot;sms&quot;: {       &quot;content&quot;: {          &quot;mimeType&quot;: &quot;text/plain&quot;,          &quot;priorityService&quot;: &quot;false&quot;       },       &quot;recipients&quot;: {&quot;recipient&quot;: [{&quot;id&quot;: &quot;$audienceID&quot;}]}    } }}"/>
+            <param datatype="string" encode="true" name="audienceID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="lname" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="fname" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="ksid" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="eventID" sms-name="" src="" value=""/>
+            <param datatype="string" encode="true" name="kmsurl" sms-name="" src="" value=""/>
+         </service-input>
+         <service-output>
+            <param datatype="number" format="None" formatvalue="" name="opstatus" sms-name="" src="" target=""/>
+            <param datatype="string" format="None" formatvalue="" name="errmsg" sms-name="" src="" target=""/>
+            <param datatype="number" format="None" formatvalue="" name="httpStatusCode" sms-name="" src="" target=""/>
+         </service-output>
+      </service>
+   </services>
+</application>

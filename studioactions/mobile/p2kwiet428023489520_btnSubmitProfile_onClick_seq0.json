@@ -1,0 +1,19 @@
+{
+    "p2kwiet428023489520_btnSubmitProfile_onClick_seq0": {
+        "id": "p2kwiet428023489520_btnSubmitProfile_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_573804280234898374",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "preferences",
+            "display": "preferences",
+            "inputparams": [],
+            "source": "module"
+        }]
+    }
+}

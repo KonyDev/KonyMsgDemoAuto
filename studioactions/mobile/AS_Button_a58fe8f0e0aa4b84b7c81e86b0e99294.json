@@ -1,0 +1,24 @@
+{
+    "AS_Button_a58fe8f0e0aa4b84b7c81e86b0e99294": {
+        "id": "AS_Button_a58fe8f0e0aa4b84b7c81e86b0e99294",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmGeoLocations",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j9541048233045268565456bb2a57924"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dc9d1457ffc74e3f84134c0ed3d08ad4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmGeoLocations.btnMap.text==\"Map\")\n  {\n    frmGeoLocations.segLocations.isVisible=false;\n    frmGeoLocations.mapLocations.isVisible=true;\n    frmGeoLocations.btnMap.text=\"List\";\n  }\nelse\n  {\n    frmGeoLocations.segLocations.isVisible=true;\n    frmGeoLocations.mapLocations.isVisible=false;\n    frmGeoLocations.btnMap.text=\"Map\";\n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

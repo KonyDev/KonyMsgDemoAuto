@@ -1,0 +1,12 @@
+{
+    "AS_TitleBar_7a3353e61d5f4c7c8bd23efd8373487e": {
+        "id": "AS_TitleBar_7a3353e61d5f4c7c8bd23efd8373487e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": []
+    }
+}

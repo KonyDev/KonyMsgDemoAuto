@@ -1,0 +1,30 @@
+{
+    "AS_Label_84f74b6b79c041408d1040a98c773ec6": {
+        "id": "AS_Label_84f74b6b79c041408d1040a98c773ec6",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmUrl",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4a9a7fb7603c4f0f9ea574bc9a0fffba"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__28811197f0e04fff81daa5b80b89f147",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.openURL(\"http://www.kony.com/trials\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

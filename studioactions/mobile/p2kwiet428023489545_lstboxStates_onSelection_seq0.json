@@ -1,0 +1,16 @@
+{
+    "p2kwiet428023489545_lstboxStates_onSelection_seq0": {
+        "id": "p2kwiet428023489545_lstboxStates_onSelection_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_onSelection_541428023489632",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "selectedState=frmProfile.lstboxStates.selectedKeyValue[1];\n //alert(selectedState);"
+        }]
+    }
+}

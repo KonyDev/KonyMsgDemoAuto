@@ -1,0 +1,19 @@
+{
+    "p2kwiet428023489458_btnReload_onClick_seq0": {
+        "id": "p2kwiet428023489458_btnReload_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_556134280234892140",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "reloadCOntent",
+            "display": "reloadCOntent",
+            "inputparams": [],
+            "source": "module"
+        }]
+    }
+}

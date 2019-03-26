@@ -1,0 +1,123 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        1,
+        0,
+        1
+    ],
+    "_skin_": "s29ce9853c934e97abbf94af46833dce",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.listbox.AndroidListBoxProperty",
+        "dropDownImage": "d_arrow_grey.png",
+        "placeholder": "Select State",
+        "placeholderSkin": "sknPlaceHolder",
+        "psp": {
+            "applySkinsToPopup": true,
+            "placeholderSkin": "s1d902f366bc4222b215e8eaf6632daa",
+            "popupTitle": "Please Select"
+        },
+        "render": true,
+        "viewType": 0
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "ispercent": true,
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": false
+    },
+    "dropdownimage": "d_arrow_grey.png",
+    "focusskin": "s29ce9853c934e97abbf94af46833dce",
+    "hexpand": true,
+    "id": "lstboxStates",
+    "ide_onSelection": "p2kwiet428023489545_lstboxStates_onSelection_seq0",
+    "info": null,
+    "iphone": {
+        "@class": "com.kony.gen.viz.model.component.property.listbox.IPhoneListBoxProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "dropDownImage": "d_arrow_grey.png",
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "placeholder": "Select State",
+        "psp": {
+            "groupCells": false
+        },
+        "render": true,
+        "viewType": 0
+    },
+    "isvisible": false,
+    "kuid": "p2kwiet428023489538",
+    "margininpixel": false,
+    "masterdata": [],
+    "name": "kony.ui.ListBox",
+    "paddinginpixel": false,
+    "parent": "vbox21405434215912",
+    "pf": "frmProfile",
+    "selectedkey": "",
+    "selectedkeyvalue": [],
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.listbox.SPAListBoxProperty"
+    },
+    "spaan": {
+        "@class": "com.kony.gen.viz.model.component.property.listbox.SPAAndroidListBoxProperty",
+        "render": true
+    },
+    "spabb": {
+        "@class": "com.kony.gen.viz.model.component.property.listbox.SPABBListBoxProperty",
+        "render": true
+    },
+    "spaip": {
+        "@class": "com.kony.gen.viz.model.component.property.listbox.SPAIPhoneListBoxProperty",
+        "render": true
+    },
+    "spawinphone8": {
+        "@class": "com.kony.gen.viz.model.component.property.listbox.SPAWinPhone8ListBoxProperty",
+        "render": true
+    },
+    "vexpand": false,
+    "wType": "ListBox",
+    "widgetalignment": 5,
+    "winphone8": {
+        "@class": "com.kony.gen.viz.model.component.property.listbox.WinPhone8ListBoxProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "placeholder": "Select State",
+        "psp": {
+            "enableCache": false
+        },
+        "render": true
+    }
+}

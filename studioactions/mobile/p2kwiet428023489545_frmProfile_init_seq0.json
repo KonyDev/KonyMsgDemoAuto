@@ -1,0 +1,22 @@
+{
+    "p2kwiet428023489545_frmProfile_init_seq0": {
+        "id": "p2kwiet428023489545_frmProfile_init_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_init_218074280234899930",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "countryName",
+            "display": "countryName",
+            "inputparams": [],
+            "source": "module"
+        }]
+    }
+}

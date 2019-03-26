@@ -1,0 +1,109 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_text_": "Browser",
+    "_type_": 3,
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.browser.AndroidBrowserProperty",
+        "enableZoom": true,
+        "render": true,
+        "screenLevelWidget": false
+    },
+    "canUpdateUI": true,
+    "containerheightreference": 1,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "detecttelnumber": true,
+    "enablezoom": true,
+    "hexpand": true,
+    "htmlstring": "",
+    "id": "browserRichPush",
+    "info": null,
+    "iphone": {
+        "@class": "com.kony.gen.viz.model.component.property.browser.IPhoneBrowserProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "detectTelNumber": true,
+        "enableZoom": true,
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "render": true,
+        "screenLevelWidget": false
+    },
+    "isvisible": true,
+    "kuid": "p2kwiet428023489454",
+    "margininpixel": false,
+    "name": "kony.ui.Browser",
+    "paddinginpixel": false,
+    "parent": "frmBrowser",
+    "pf": "frmBrowser",
+    "requesturlconfig": {
+        "URL": "",
+        "requestMethod": "get"
+    },
+    "screenlevelwidget": false,
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.browser.SPABrowserProperty"
+    },
+    "spaan": {
+        "@class": "com.kony.gen.viz.model.component.property.browser.SPAAndroidBrowserProperty",
+        "render": true
+    },
+    "spabb": {
+        "@class": "com.kony.gen.viz.model.component.property.browser.SPABBBrowserProperty",
+        "render": true
+    },
+    "spaip": {
+        "@class": "com.kony.gen.viz.model.component.property.browser.SPAIPhoneBrowserProperty",
+        "render": true
+    },
+    "spawinphone8": {
+        "@class": "com.kony.gen.viz.model.component.property.browser.SPAWinPhone8BrowserProperty",
+        "render": true
+    },
+    "vexpand": false,
+    "wType": "Browser",
+    "widgetalignment": 5,
+    "winphone8": {
+        "@class": "com.kony.gen.viz.model.component.property.browser.WinPhone8BrowserProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "psp": {
+            "enableCache": false
+        },
+        "render": true,
+        "screenLevelWidget": false
+    }
+}

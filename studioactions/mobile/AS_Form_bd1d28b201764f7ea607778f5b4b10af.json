@@ -1,0 +1,27 @@
+{
+    "AS_Form_bd1d28b201764f7ea607778f5b4b10af": {
+        "id": "AS_Form_bd1d28b201764f7ea607778f5b4b10af",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "neworientation"
+        }],
+        "contextObj": {
+            "name": "frmProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet428023489545"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__91190d18de9f4d16827d38274ff8acda",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--on Device Back Clicked---\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

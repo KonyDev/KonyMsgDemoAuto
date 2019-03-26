@@ -1,0 +1,160 @@
+{
+    "DNDConfig": null,
+    "_enabled_": false,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": "vertical",
+    "_padding_": [
+        4,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s13c3d43da5b42c68b2890a56e91ed60",
+    "_text_": "",
+    "android": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.AndroidCheckBoxProperty",
+        "_margin_": [
+            0,
+            1,
+            0,
+            1
+        ],
+        "_padding_": [
+            1,
+            2,
+            0,
+            2
+        ],
+        "itemOrientation": "vertical",
+        "margin": [
+            0,
+            1,
+            0,
+            1
+        ],
+        "marginInPixel": false,
+        "padding": [
+            1,
+            2,
+            0,
+            2
+        ],
+        "paddingInPixel": false,
+        "render": true,
+        "tickedImage": "checkbox_tick.png",
+        "untickedImage": "checkbox.png"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "context": {
+        "channel": "mobile",
+        "formID": "BasicWidgets1",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "focusskin": "s13c3d43da5b42c68b2890a56e91ed60",
+    "id": "checkBxPreference",
+    "info": null,
+    "iphone": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.IPhoneCheckBoxProperty",
+        "psp": {
+            "groupCells": false,
+            "viewType": 4
+        },
+        "render": true
+    },
+    "isvisible": true,
+    "itemorientation": "vertical",
+    "kuid": "p2kwiet428023489505",
+    "margininpixel": false,
+    "masterdata": [
+        [
+            "0",
+            "Push Message"
+        ],
+        [
+            "1",
+            "SMS"
+        ],
+        [
+            "2",
+            "E-Mail"
+        ]
+    ],
+    "name": "kony.ui.CheckBoxGroup",
+    "orientation": "vertical",
+    "paddinginpixel": false,
+    "parent": "hbox15865480715900",
+    "pf": "frmPreference",
+    "selectedkey": null,
+    "selectedkeys": [
+        "1",
+        "2",
+        "0"
+    ],
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": [
+        [
+            "0",
+            "Push Message"
+        ],
+        [
+            "1",
+            "SMS"
+        ],
+        [
+            "2",
+            "E-Mail"
+        ]
+    ],
+    "spa": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.SPACheckBoxProperty",
+        "itemOrientation": "vertical"
+    },
+    "spaan": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.SPAAndroidCheckBoxProperty",
+        "render": true
+    },
+    "spabb": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.SPABBCheckBoxProperty",
+        "render": true
+    },
+    "spaip": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.SPAIPhoneCheckBoxProperty",
+        "render": true
+    },
+    "spawinphone8": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.SPAWinPhone8CheckBoxProperty",
+        "render": true
+    },
+    "vexpand": false,
+    "wType": "CheckBoxGroup",
+    "widgetalignment": 4,
+    "winphone8": {
+        "@class": "com.kony.gen.viz.model.component.property.checkbox.WinPhone8CheckBoxProperty",
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "itemOrientation": "vertical",
+        "margin": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "marginInPixel": true,
+        "psp": {
+            "enableCache": false
+        },
+        "render": true
+    }
+}

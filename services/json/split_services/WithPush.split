@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pxsObject>
+    <appSmsCode></appSmsCode>
+    <plainxmlservice>
+        <authenticationMode>basic</authenticationMode>
+        <cacheduration></cacheduration>
+        <cacheable>false</cacheable>
+        <includecookies></includecookies>
+        <dataprovider></dataprovider>
+        <dcResponse/>
+        <encryptPwd>true</encryptPwd>
+        <escapeXML>false</escapeXML>
+        <group>other</group>
+        <headerparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>AccessToken</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>103e28fd07da33a4ae3e2029eacf0d8f2733e722</testvalue>
+            <value></value>
+        </headerparam>
+        <headerparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>AccessSecret</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>1db816f00982124a3e4d069ddf5eada8cd624f52</testvalue>
+            <value></value>
+        </headerparam>
+        <headerparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>Content-Type</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>application/json</testvalue>
+            <value></value>
+        </headerparam>
+        <httpmethod></httpmethod>
+        <id>WithPush</id>
+        <identityProvider></identityProvider>
+        <identityProviderName></identityProviderName>
+        <ignoreProxy>false</ignoreProxy>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>audienceID</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>454</testvalue>
+            <value></value>
+        </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>lname</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>narayana</testvalue>
+            <value></value>
+        </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>fname</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>vadithya</testvalue>
+            <value></value>
+        </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>ksid</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>2365876614831262922</testvalue>
+            <value></value>
+        </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>eventID</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>11</testvalue>
+            <value></value>
+        </inparam>
+        <inparam>
+            <category></category>
+            <datatype>string</datatype>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <encode>true</encode>
+            <format>None</format>
+            <formatvalue></formatvalue>
+            <id>kmsurl</id>
+            <invalue></invalue>
+            <name></name>
+            <order></order>
+            <passNull>false</passNull>
+            <recordid></recordid>
+            <smsname></smsname>
+            <source></source>
+            <srcformatvalue></srcformatvalue>
+            <target></target>
+            <targetdatatype></targetdatatype>
+            <testvalue>mobilefabric-demo.messaging.konycloud.com</testvalue>
+            <value></value>
+        </inparam>
+        <intemplate>{"event": {
+   "email": {
+      "content": {"priorityService": "false"},
+      "from": {},
+      "recipients": {"recipient": [{"id": "$audienceID"}]}
+   },
+   "eventNamePairs": {"key": [
+      {
+         "content": "$lname",
+         "name": "lastname"
+      },
+      {
+         "content": "$fname",
+         "name": "firstname"
+      }
+   ]},
+   "eventid": "$eventID",
+   "message": {
+      "content": {
+         "mimeType": "text/plain",
+         "priorityService": "false"
+      },
+      "subscribers": {"subscriber": [{"ksid": "$ksid"}]}
+   },
+   "pass": {
+      "passTemplateValues": {"key": [
+         {
+            "data": "1A",
+            "label": "Seat",
+            "name": "Seat"
+         },
+         {
+            "data": "BA0175",
+            "label": "Flight",
+            "name": "Flight"
+         },
+         {
+            "data": "LHR",
+            "label": "London",
+            "name": "Departure City"
+         },
+         {
+            "data": "JFK",
+            "label": "New York",
+            "name": "Arrival City"
+         },
+         {
+            "data": "Matthew Terry",
+            "label": "Name",
+            "name": "Passenger Name"
+         },
+         {
+            "data": "Platinum",
+            "label": "Status",
+            "name": "Passenger Status"
+         },
+         {
+            "data": "16 Dec - 10:00",
+            "label": "Departs",
+            "name": "Departure"
+         },
+         {
+            "data": "Club World",
+            "label": "Class",
+            "name": "Class"
+         },
+         {
+            "data": "Waterside,\r\nSpeedbird Way, \r\noff Bath Road,\r\nHarmondsworth, UB7 0GA",
+            "label": "Head Office",
+            "name": "BA Address"
+         },
+         {
+            "data": "care@ba.com\r\n1800123456789",
+            "label": "Cust Care",
+            "name": "BA  Customer Care"
+         },
+         {
+            "data": "BA is the trademark of British Airways.",
+            "label": "Copyright",
+            "name": "BA Copyright"
+         }
+      ]},
+      "recipients": {"recipient": [{"id": "$audienceID"}]}
+   },
+   "sms": {
+      "content": {
+         "mimeType": "text/plain",
+         "priorityService": "false"
+      },
+      "recipients": {"recipient": [{"id": "$audienceID"}]}
+   }
+}}</intemplate>
+        <ntlmDomain></ntlmDomain>
+        <ntlmHost></ntlmHost>
+        <outtemplate>{"event": {
+   "emailResponse": {
+      "response": {
+         "id": "2375361252861776571",
+         "message": "Request Queued. "
+      },
+      "status": 200
+   },
+   "messageResponse": {
+      "response": {
+         "id": "",
+         "message": "Invalid Subscribers"
+      },
+      "status": 404
+   },
+   "passResponse": {
+      "response": {
+         "id": "4556527071490909288",
+         "message": "Request Queued. "
+      },
+      "status": 200
+   },
+   "smsResponse": {
+      "response": {
+         "id": "8776932379765293571",
+         "message": "Request Queued. "
+      },
+      "status": 200
+   }
+}}</outtemplate>
+        <outTemplateHeader>Date: Mon, 20 Apr 2015 13:47:36 GMT
+Content-Length: 394
+Connection: keep-alive
+Content-Type: text/html;charset=UTF-8
+Server: Kony
+</outTemplateHeader>
+        <password></password>
+        <postclassname></postclassname>
+        <preclassname></preclassname>
+        <proxyname></proxyname>
+        <proxyport></proxyport>
+        <proxypwd></proxypwd>
+        <proxyuserid></proxyuserid>
+        <responseencoding>UTF-8</responseencoding>
+        <smscode></smscode>
+        <smsenabled>false</smsenabled>
+        <timeout></timeout>
+        <url>https://$kmsurl:443/api/v1/events/push</url>
+        <urlprovider></urlprovider>
+        <userid></userid>
+    </plainxmlservice>
+</pxsObject>

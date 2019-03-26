@@ -1,0 +1,58 @@
+{
+    "NativeFunctionAPI": {
+        "iOS": {
+            "10.0": {
+                "Kony_SyncV2-iOS-10.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "iOS",
+                    "os": "10.0",
+                    "url": "D:\\workspaces\\Viz8.0beta\\Kony_Visualizer_Enterprise\\configuration\\org.eclipse.osgi\\bundles\\488\\1\\.cp\\resources\\sdk\\nativeBindings\\Kony_SyncV2-iOS-10.0.zip",
+                    "filepath": "D:\\workspaces\\VizWorkspace8.0beta\\KonyMsgDemo\\nativebindings\\iOS\\10.0\\Kony_SyncV2-iOS-10.0.zip",
+                    "enable": false
+                }
+            },
+            "11.0": {
+                "Kony_SyncV2-iOS-11.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "isDefault": true,
+                    "url": "D:\\KonyVisualizerEnterprise_GA_8.3.0.0\\Kony_Visualizer_Enterprise\\configuration\\org.eclipse.osgi\\bundles\\557\\1\\.cp\\resources\\sdk\\nativeBindings\\Kony_SyncV2-iOS-11.0.zip",
+                    "filepath": "D:\\KonyVisualizerEnterprise_GA_8.3.0.0\\workspace\\KonyMsgDemo\\nativebindings\\iOS\\11.0\\Kony_SyncV2-iOS-11.0.zip",
+                    "enable": true
+                },
+                "Kony_SDKCommons-iOS-11.0": {
+                    "title": "Kony_SDKCommons",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "isDefault": true,
+                    "url": "D:\\KonyVisualizerEnterprise_GA_8.3.0.0\\Kony_Visualizer_Enterprise\\configuration\\org.eclipse.osgi\\bundles\\557\\1\\.cp\\resources\\sdk\\nativeBindings\\Kony_SDKCommons-iOS-11.0.zip",
+                    "filepath": "D:\\KonyVisualizerEnterprise_GA_8.3.0.0\\workspace\\KonyMsgDemo\\nativebindings\\iOS\\11.0\\Kony_SDKCommons-iOS-11.0.zip",
+                    "enable": true
+                }
+            }
+        },
+        "Android": {
+            "4.0": {
+                "Kony_SyncV2-Android-4.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "url": "D:\\workspaces\\Viz8.0beta\\Kony_Visualizer_Enterprise\\configuration\\org.eclipse.osgi\\bundles\\488\\1\\.cp\\resources\\sdk\\nativeBindings\\Kony_SyncV2-Android-4.0.zip",
+                    "filepath": "D:\\KonyVisualizerEnterprise_GA_8.3.0.0\\workspace\\KonyMsgDemo\\nativebindings\\Android\\4.0\\Kony_SyncV2-Android-4.0.zip",
+                    "enable": true,
+                    "isDefault": true
+                },
+                "Kony_SDKCommons-Android-4.0": {
+                    "title": "Kony_SDKCommons",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "isDefault": true,
+                    "url": "D:\\KonyVisualizerEnterprise_GA_8.3.0.0\\Kony_Visualizer_Enterprise\\configuration\\org.eclipse.osgi\\bundles\\557\\1\\.cp\\resources\\sdk\\nativeBindings\\Kony_SDKCommons-Android-4.0.zip",
+                    "filepath": "D:\\KonyVisualizerEnterprise_GA_8.3.0.0\\workspace\\KonyMsgDemo\\nativebindings\\Android\\4.0\\Kony_SDKCommons-Android-4.0.zip",
+                    "enable": true
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "p2kwiet428023489589_frmUrl_preshow_seq0": {
+        "id": "p2kwiet428023489589_frmUrl_preshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "expression_preshow_6464428023489910",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmUrl.txtBoxUrl.text=\"\";\nfrmUrl.txtBoxAppId.text=\"\";\nfrmUrl.txtBoxSenderID.text=\"\";\nfirstRegister=true;\n \n "
+        }]
+    }
+}

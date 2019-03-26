@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application id="KonyMsgDemo" name="KonyMsgDemo">
+    <container isflex="false" displayname="Form" id="frmBrowser" type="form">
+        <component displayname="TextBox2" id="txtBoxUrl" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmEvent" type="form">
+        <component displayname="TextBox2" id="txtBoxEventId" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmHome" type="form"/>
+    <container isflex="false" displayname="Form" id="frmOption" type="form"/>
+    <container isflex="false" displayname="Form" id="frmPreference" type="form"/>
+    <container isflex="false" displayname="Form" id="frmProfile" type="form">
+        <component displayname="TextBox2" id="txtBoxFname" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBoxLname" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBoxEmail" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBoxCountry" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBoxState" type="textbox2"/>
+        <component displayname="ListBox" id="listbox5316540885527" type="listbox"/>
+        <component displayname="ListBox" id="lstboxStates" type="listbox"/>
+        <component displayname="TextBox2" id="txtBoxMob" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmSetting" type="form">
+        <component displayname="TextBox2" id="txtBoxAppId" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBoxSenderID" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBoxurl1" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Form" id="frmUrl" type="form">
+        <component displayname="TextBox2" id="txtBoxUrl" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBoxAppId" type="textbox2"/>
+        <component displayname="TextBox2" id="txtBoxSenderID" type="textbox2"/>
+    </container>
+    <container isflex="false" displayname="Popup" id="infoPopup" type="dialog"/>
+    <container isflex="false" displayname="Popup" id="optionPopup" type="dialog"/>
+    <globalsequences/>
+    <skins/>
+</application>

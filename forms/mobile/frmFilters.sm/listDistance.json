@@ -1,0 +1,92 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        4,
+        0
+    ],
+    "_skin_": "s5c03eb51e9a4eab8dcebdd3213b6717",
+    "_top_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "frmFilters",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "dropdownimage": "downarrow.png",
+    "groupcells": false,
+    "id": "listDistance",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e81f608f979248c0bfab8d29c80f4547",
+    "masterdata": [
+        [
+            "5",
+            "  5 Miles"
+        ],
+        [
+            "10",
+            "  10 Miles"
+        ],
+        [
+            "20",
+            "  20 Miles"
+        ],
+        [
+            "50",
+            "  50 Miles"
+        ],
+        [
+            "100",
+            "  100 Miles"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "paddinginpixel": false,
+    "parent": "flxFilterMain",
+    "pf": "frmFilters",
+    "selectedkey": "10",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "10",
+        "  10 Miles"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

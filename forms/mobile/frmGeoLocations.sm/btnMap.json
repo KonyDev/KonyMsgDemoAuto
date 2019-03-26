@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "83.03%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s914b3f6b61a470c906aa3f5629d67e0",
+    "_text_": "Map",
+    "_top_": {
+        "type": "string",
+        "value": "-0.23%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "17%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sbd87f0e88204202a8e0818841e53c0b",
+    "id": "btnMap",
+    "ide_onClick": "AS_Button_a58fe8f0e0aa4b84b7c81e86b0e99294",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d019bfc206e844b0a03a1c868d4e8e79",
+    "name": "kony.ui.Button",
+    "parent": "flxFilter",
+    "pf": "frmGeoLocations",
+    "wType": "Button",
+    "zindex": 1
+}

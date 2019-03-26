@@ -1,0 +1,28 @@
+{
+    "AS_Form_e07a15740d4642a3acf578df7beeced8": {
+        "id": "AS_Form_e07a15740d4642a3acf578df7beeced8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmGeoLocations",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j9541048233045268565456bb2a57924"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___fa3e53d63dd74abf915e79770f886d0e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "testsample",
+            "display": "testsample",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

@@ -1,0 +1,131 @@
+{
+    "@class": "com.kony.gen.appprops.KVizAppProps",
+    "appidkey": "kmsapp1",
+    "applogokey": "konyap.png",
+    "appmenu": {
+        "tablet": {
+            "data": []
+        },
+        "desktop": {
+            "data": []
+        },
+        "wType": "Appmenu",
+        "mobile": {
+            "data": []
+        }
+    },
+    "appnamekey": "KMSDemo",
+    "apppackagekey": "com.kony.KonyMsgDemo",
+    "appversionkey": "2.0.0",
+    "build": "release",
+    "category": "app",
+    "cordovaVersionInfo": {
+        "useGlobalCordova": false
+    },
+    "createdVizVersion": "7.1.1",
+    "createdgaversion": "6.0.0",
+    "currentgaversion": "8.3.14",
+    "defaulttheme": "KonyTheme",
+    "desktopwebaligenmentoption": "left",
+    "desktopwebbasefontsize": "16",
+    "desktopwebwidthoption": "Percentage",
+    "desktopwebwidthval": "100",
+    "enableCordova": false,
+    "enableIdForAutomation": true,
+    "enableactionbar": false,
+    "extendBottom": "false",
+    "extendTop": "false",
+    "ide_appEvents": {
+        "mobile": {
+            "postappinit": "kmsapppostappinit",
+            "preappinit": "kmsapppreappinit"
+        }
+    },
+    "ipadlandscapemodekey": "portrait",
+    "iphonebundleidentifierkey": "com.kone.testKms",
+    "iphonebundleversionkey": "1.0",
+    "iphoneipadglossyeffectkey": "true",
+    "isA11yConfigEnabled": false,
+    "isDeveloperMode": "true",
+    "isDpScaleFactor": true,
+    "isNewAppWithRespectToAndroidPackageName": "true",
+    "kfAppInfo": {
+        "047da162-d5b8-4088-af89-0f280b71528e": {
+            "appName": "KonyMsgDemo",
+            "baseId": "e9828dee-16cb-4e60-a461-a98f7520ae6f",
+            "id": "e9828dee-16cb-4e60-a461-a98f7520ae6f",
+            "version": "1.0"
+        },
+        "835ccb99-10d9-49bd-b22c-665affc20a25": {
+            "appName": "KMS Demo",
+            "id": "a32be03b-815f-403e-bc2e-11b6af75d940",
+            "baseId": "a32be03b-815f-403e-bc2e-11b6af75d940",
+            "version": "1.0"
+        }
+    },
+    "konyVizVersion": "8.3.14",
+    "mwaddrkey": "10.10.12.145",
+    "mwhttpsportkey": "443",
+    "mwportkey": "80",
+    "nativeContainerProperties": {
+        "isEnableJSContainerAndroid": true,
+        "isModified": true,
+        "isEnableJSContaineriOS": true,
+        "isEnableJSContainer": true
+    },
+    "pasteboardType": "2",
+    "project_version": "sprint32",
+    "referenceWidth": "375",
+    "spaandroidtabbasefontsize": "17",
+    "spaipadbasefontsize": "17",
+    "startupformkey": "4a9a7fb7603c4f0f9ea574bc9a0fffba",
+    "statusBarHidden": "false",
+    "statusBarStyle": "STATUS_BAR_STYLE_DEFAULT",
+    "supportedorientations": [
+        "portrait"
+    ],
+    "vendornamekey": "KonyLabs",
+    "wap_android240_fontsize": "10",
+    "wap_android320_fontsize": "12",
+    "wap_android360_fontsize": "13",
+    "wap_android400_fontsize": "14",
+    "wap_android440_fontsize": "15",
+    "wap_android480_fontsize": "16",
+    "wap_android640_fontsize": "19",
+    "wap_android_fontsize": "10",
+    "wap_bb240_fontsize": "12",
+    "wap_bb320_fontsize": "12",
+    "wap_bb360_fontsize": "12",
+    "wap_bb400_fontsize": "12",
+    "wap_bb440_fontsize": "12",
+    "wap_bb480_fontsize": "12",
+    "wap_ip_fontsize": "12",
+    "wap_spaandroidtab_fontsize": "17",
+    "wap_spaandroidtabhdpi_fontsize": "16",
+    "wap_spaandroidtabldpi_fontsize": "17",
+    "wap_spaandroidtabmdpi_fontsize": "14",
+    "wap_spaandroidtabxhdpi_fontsize": "18",
+    "wap_spaipad_fontsize": "17",
+    "wap_spawindowstab_fontsize": "12",
+    "wap_winphone320_fontsize": "12",
+    "wap_winphone480_fontsize": "12",
+    "watchos_longlooknotificationicon_38": "",
+    "watchos_longlooknotificationicon_42": "",
+    "watchos_notificationcentericon_38": "",
+    "watchos_notificationcentericon_42": "",
+    "watchos_shortlooknotificationicon_38": "",
+    "watchos_shortlooknotificationicon_42": "",
+    "winmangotiletitlekey": "KonyMsgDemo",
+    "winmobileguidkey": "",
+    "cloud_account_guid": "147abad9-e5d0-4108-ab0b-70743455dc49",
+    "cordovaModified": false,
+    "watchos_companionSettings3x29": "",
+    "watchos_homeScreen40": "",
+    "watchos_companionSettings2x29": "",
+    "watchos_watchMarketing1x": "",
+    "enableResponsive": false,
+    "enableProgressiveWeb": false,
+    "enablexfsdw": false,
+    "enablexfsspa": false,
+    "androidwearStartUpFormKey": "j6bf07cca817442ea6df73706479b642"
+}
